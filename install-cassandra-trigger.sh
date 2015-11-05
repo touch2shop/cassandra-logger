@@ -17,7 +17,7 @@ if [ ! -d ${cassandra_dir} ]; then
 	exit 1
 fi
 
-cassandra_conf_dir=${cassandra_dir}/conf
+cassandra_conf_dir=${cassandra_dir}
 cassandra_triggers_dir=${cassandra_conf_dir}/triggers
 if [ ! -d ${cassandra_triggers_dir} ]; then
 	echo "Triggers directory does not exist ($cassandra_triggers_dir)."
